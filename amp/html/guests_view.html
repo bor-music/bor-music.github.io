@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>Renegedebook</title>
+<style type="text/css">
+
+html {
+  background: url(http://bor-music.de/html/img/frame_content.jpg) no-repeat fixed;
+  }
+
+b {
+  color:#DDDD88;
+  font-variant:small-caps;
+  }
+
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family:Verdana,Arial;
+  font-size:12px;
+  color:#DEBA5C;
+  scrollbar-base-color:#DEBA5C;
+  scrollbar-3d-light-color:#000000;
+  scrollbar-arrow-color:#382924;
+  scrollbar-darkshadow-color:#000000;
+  scrollbar-face-color:#DEBA5C;
+  scrollbar-highlight-color:#EBD297;
+  scrollbar-shadow-color:#000000;
+  scrollbar-track-color:#382924;
+  }
+
+a:link {
+  font-weight:normal;
+  color:#F4B224;
+  text-decoration:none;
+  }
+
+a:hover {
+  font-weight:normal;
+  color:#382924;
+  text-decoration:none;
+  background-color:#DEBA5C;
+  }
+
+a:active {
+  font-weight:normal;
+  color:#382924;
+  text-decoration:none;
+  background-color:#DEBA5C;
+  }
+
+a:focus {
+  font-weight:normal;
+  color:#382924;
+  text-decoration:none;
+  background-color:#DEBA5C;
+  }
+
+a:visited {
+  font-weight:normal;
+  color:#F4B224;
+  text-decoration:none;
+  }
+
+hr {
+  border:solid #DEBA5C 1px;
+  }
+
+.ueberschrift2 {
+  font-weight:bold;
+  font-variant:small-caps;
+  text-align:justify;
+  font-size:14px;
+  color:#DDDD88;
+  background-color:transparent;
+  
+  border-style:solid;
+  border-color:#DEBA5C;
+  border-width:1px;
+
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left:75px;
+  margin-right:75px;
+  
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-left:5px;
+  padding-right:5px;
+  }
+
+.news {
+  text-align:justify;
+  background-color:transparent;
+  
+  border-top-color:#DEBA5C;
+  border-bottom-color:#DEBA5C;
+  border-left-color:#DEBA5C;
+  border-right-color:#DEBA5C;
+  
+  border-top-width:0px;
+  border-bottom-width:1px;
+  border-left-width:1px;
+  border-right-width:1px;
+
+  margin-top:0px;
+  margin-bottom:0px;
+  margin-left:75px;
+  margin-right:75px;
+
+  padding-top:2px;
+  padding-bottom:2px;
+  padding-left:5px;
+  padding-right:5px;
+
+  border-style:solid;
+  }
+
+.titel{
+  font-variant:small-caps;
+  font-weight:bold;
+  padding:0px;
+  font-size:28px;
+  text-align:center;
+  color:#F4B224;
+  }
+
+.inthere{
+  font-variant:small-caps;
+  font-size:20px;
+  text-align:center;
+  }
+
+</style>
+
+<script type="text/javascript">
+function guestin (Adresse) {
+  fenster = window.open(Adresse, "guest", "width=640,height=409,left=100,top=60,dependent=no,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no");
+  fenster.focus();
+}
+</script>
+
+</head>
+<body>
+
+<div class="titel">Guests</div>
+<br>
+
+<div class="inthere">
+<a href="http://www.bor-music.de/html/guests.html" onclick="guestin(this.href); return false">Rock The Book!</a><br>
+</div>
+
+
+<br>
+
+<!-- BEGIN Eintrag -->
+<br><br>
+<div class="ueberschrift2">
+<font size=-2>{Datum}:</font>&nbsp;{Name}&nbsp;&nbsp;
+
+<!-- BEGIN Ifemail -->
+<a href="mailto:{Email}">[mail]</a>
+<!-- END Ifemail -->
+
+<!-- BEGIN Ifwebseite -->
+&nbsp;<a href="http://{Webseite}" target="_blank">[page]</a>
+<!-- END Ifwebseite -->
+
+
+</div>
+<div class="news">
+{Nachricht}
+<!-- BEGIN Ifkommentar -->
+<br><br>
+<b>Kommentar von {Kommentar_von}:</b><br>
+{Kommentar}
+<br>
+<!-- END Ifkommentar -->
+</div>
+<br>
+<!-- END Eintrag -->
+
+<br><br>
+<center>View page
+<br>
+{Navigation}
+<br><br>
+{Eintrag_gesamt} dudes have rocked here so far.
+</center>
+<br><br>
+<div class="inthere">
+<a href="http://www.bor-music.de/html/guests.html" onclick="guestin(this.href); return false">Rock The Book!</a><br>
+</div>
+<br><br><br><br><br><br>
+<center>
+{Copyright}
+</center>
+</body>
+</html>
